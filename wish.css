@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family:'robosis';
+}
+
+
+.wish{
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wish h1{
+    padding: 0;
+    color: #7977775e;
+    margin-top: 50px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 span{
+    display: table-cell;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1){
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(4){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.75s;
+}
+h1 span:nth-child(7){
+    animation-delay: 2s;
+}
+h1 span:nth-child(8){
+    animation-delay: 2.25s;
+}
+h1 span:nth-child(9){
+    animation-delay: 2.5s;
+}
+h1 span:nth-child(10){
+    animation-delay: 2.75s;
+}
+h1 span:nth-child(11){
+    animation-delay: 3s;
+}
+h1 span:nth-child(12){
+    animation-delay: 3.25s;
+}
+h1 span:nth-child(13){
+    animation-delay: 3.5s;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        color: #000;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4;
+
+                    
+    }
+    5%,95%
+    {
+        color: #fff;
+        filter: blur(0px);
+        text-shadow: 0 0 10px none;
+    }
+}
+
+.mosi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+}
+.mosi h2{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below -37px linear-gradient(transparent,#fff);
+}
+
+.mosi h2 span{
+    animation: animat 5s linear infinite;
+}
+@keyframes animat
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #000000a2;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #fcff5c,
+        0 0 20px #fcff5c,
+        0 0 40px #fcff5c,
+        0 0 80px #fcff5c,
+        0 0 160px #fcff5c,
+        0 0 400px #fcff5c;
+    }
+}
+
+  .tell{
+    background: #ffffff6b;
+    color: #000;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    font-family: 'brush script mt',cursive;
+  }
+  .yours{
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 60px;
+    background: #0000008c;
+    min-height: 100vh;
+    height: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 50px;
+  }
+  .yours h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .yours h2{
+    padding: 10px 90px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+  }
+  .yours span{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+  }
+ 
+.question{
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.question h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+.question textarea{
+    height: 60px;
+    width: 50%;
+}
+.question button{
+    border: none;
+    background-color: #f00e7f;
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.question button:hover{
+    padding:18px 23px;
+}
+
+.question span{
+    color: #7cec68;
+    font-size: 30px;
+    margin-top: -10px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+
+  @media (max-width:480px){
+    
+    .wish h1{
+        font-size: 35px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mosi h2{
+        position: relative;
+        font-size: 2.5em;
+        text-align: center;
+        -webkit-box-reflect: below -20px linear-gradient(transparent,#fff);
+    }
+    .tell{
+        width: 80%;
+        margin-left: 10%;
+        background: #ffffff6b;
+        color: #000;
+        display: flex;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        border: none;
+        border-radius: 20px;
+      }
+
+      .yours{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 60px;
+        padding-left: 5px;
+        padding-right:5px;
+        padding-bottom: 25px;
+      }
+      .yours h2{
+        padding: 10px 10px;
+      }
+
+      .question textarea{
+        height: 60px;
+        width: 80%;
+    }
+  }

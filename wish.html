@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiable" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wishes page</title>
+    <link rel="stylesheet" href="wish.css">
+</head>
+<body background="img/download 1 (2).jpg">
+
+        <div class="wish">
+            <h1 >
+                <span>&#127880;</span>
+                <span>H</span>
+                <span>A</span>
+                <span>P</span>
+                <span>P</span>
+                <span>Y</span>
+                <span>B</span>
+                <span>I</span>
+                <span>R</span>
+                <span>T</span>
+                <span>H</span>
+                <span>D</span>
+                <span>A</span>
+                <span>Y</span>
+                <span>&#127880;</span>
+            </h1>
+            </div>
+            <div class="mosi">
+                <h2 ><span>&#128156;..MOSIKA..&#128156;</span></h2>
+            </div>
+            <div class="tell">
+                <h2>...May your day be a Joyful celebration &#127881; surrounded by love and good vibes &#129528; <br>
+                Here's to a year ahead filled with exciting adventures and dreams come true!! &#128175;...
+                <br><center>........&#127872;........</center>
+                </h2>
+        </div>
+        <div class="yours">
+            <fieldset>
+                <legend><h1>About You &#128158;</h1></legend>
+                <h2>Ninga matha ponuga maarilam illa. Ninga rompa different 😇. Ungakitta edho onnu iruku. Ennane therla first time oru ponnu kuda ivolo nalla pesi ippotha pakuren 👀. Unmayave ungala parththukaprm tha enaku positive thoughts la varuthu. Yarkudaum ippadi aanathe illa 💯. You are something 🙆🏻‍♂. Ungakitta pesa aaramichathula irunthu than unmayana happiness na ennanu therinjuchu ☺. Nan inthamathiri pesura ore ponnu ninga mattum tha 🫢. Actually you have a great sense of humor. Ungakitta pesinale enaku ella stress um poituthu. Thanks for coming into my life 😇.Matha girls mathiri Ninga make up la podama  laye natural ah azhaga iruka 🧚🏻‍♀. Promise solren you are going to have the brightest future! 😊. Ungala pudikathavanga yaarume iruka maatanga 😌. Ungaloda future husband than rompa rompa luckiest in the world 🙂. Face la enna iruku? atha Vida unga character than rompa rompa azhagaa iruku 🦋. Unkitta matha ponnuga mathiri attitude lam illave illa 😌. You are so kind 🌚. Ungakitta irukura antha innocence enaku rompa pidikum. Nan itha solliye aganum. Ninga pesurathe avolo azhagaa irukum theriuma💯. Ungaluku edha prachana na sollunga  udane un munnadi vanthu nippe 💯. Na ungalukaga eppovum irupen 🤓.Ninga eppovume happy aa tha irukanum ✨.Intha birthday ooda 1 year agituchu unkuda pesa start panni..Un dream enna nu enaku theriyathu aana kandipa athu nadakum. Intha year la irunthu ninga ninaikura ellame nadakum🤩. Ninga un career growth aga my greetings 🥰.Nama rendu perum somewhat same aa irunthalum nan ungala pathi ninaikarathuku opposite ah irukinga.Example ku sollanum na  Ninga rompa bold aana girl nu ninachen. Bold aana girl tha but dog ah pathu payapaduringa yen nu theriyala? just for fun Ithu rompa nal ah kekanum thonuchu but konjam thayakama irunthuchu. Inimel dog ah pathula payapadadhinga. Pakka childisha irunthalum atha pakkakuda azhaa than irukum 😄.Neenga different ah irukurathutha ungakitta enaku rompa pidichathu. Enakunu irukura small circle la ellorum important but ninga rompa important. Ippo kuda intha mathiri la ungaluku wish panna pudikuma nu therla. Ivolo nal enaku ithula ungakitta share pannanum thonuchu atha sonnen. Ungaluku pidicha eduthukonga illana vittutunga ok va..
+    
+    
+                    I am sending you best wishs. Because you are very special to me. Happy birthday my dear 🎉</h2>
+                    <span>............      ............</span>
+            </fieldset>
+        </div>
+        <div class="question">
+            <form name="submit-to-google-sheet">
+                <h3>What to you want for this birthday?</h3>
+            <br>
+            <textarea name="message1" rows="100" placeholder="tell me" required></textarea>
+            <br><br>
+            <h3>Do you want to tell me something? or Any feedback?</h3>
+            <br>
+            <textarea name="message2" rows="100" placeholder="tell me"required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyR5lh-jrcbfN6iCGKk4UmzPBkcrfQhwewXhM6kWOada7-T4mdHU51C1s7E1Yth2oQ2Ng/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+<script src="script1.js"></script>
+</html>
